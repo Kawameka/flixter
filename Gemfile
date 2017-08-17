@@ -73,3 +73,5 @@ gem "fog-aws"
 gem 'stripe'
 
 gem 'ranked-model'
+
+gem 'jquery-ui-rails'
