@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   namespace :instructor do
     resources :lessons, only: [:update]
     resources :sections, only: [:update] do
-      resources :lessons, only: [:new, :create]
+      resources :lessons, only: [:create]
     end
     # We can get the course_id into the URL if we hook the new and create actions by 
     # nesting the sections underneath the course resource.
